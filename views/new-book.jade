@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+  h1.heading= "New Book Page"
+  h2.subhead= "Enter a new book for the database"
+
+  if errors
+    include form-error
+  if(book)
+    include form
+  else 
+    include empty-form

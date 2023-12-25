@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  br
+  br
+  br
+  br
+  a.button(href="/") Back to home
+  pre #{error.stack}
