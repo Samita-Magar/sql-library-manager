@@ -38,19 +38,8 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       genre: DataTypes.STRING,
-      // year: DataTypes.STRING,
-      // add a validator to check character length is 4
       year: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        validate: {
-          notNull: {
-            msg: "Please provide a value for 'year'",
-          },
-          notEmpty: {
-            msg: "Please provide a value for 'year'",
-          },
-        },
+                type: DataTypes.INTEGER,
       },
     },
     {
